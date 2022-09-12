@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#chart-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  transform: rotate(0deg);
+}
+iframe {
+  height: 100%;
+  width: 100%;
+}
