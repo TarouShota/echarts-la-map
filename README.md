@@ -22,8 +22,7 @@ Map was created using Apache Echart.
 - Also, I have set up a lightweight JSON endpoint on npoint.io to fetch station's json from there
 
 -  All that is left is write an algorithm, which is going to go through a specific range of stations and connect them.  
--  ```js
--   let set = new Set();
+```js let set = new Set();
     const pushFromTo = (from, to) => {
       let i = from;
       for (i; i <= to; i++) {
@@ -44,7 +43,6 @@ Map was created using Apache Echart.
         set.add(stops[i]["MetroLine"]);
       }
     };
-    ```
-
+```
 
 -  I have separated all the lines in different functions for better readability.
