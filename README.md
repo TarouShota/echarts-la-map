@@ -22,4 +22,29 @@ Map was created using Apache Echart.
 - Also, I have set up a lightweight JSON endpoint on npoint.io to fetch station's json from there
 
 -  All that is left is write an algorithm, which is going to go through a specific range of stations and connect them.  
+-  ```js
+-   let set = new Set();
+    const pushFromTo = (from, to) => {
+      let i = from;
+      for (i; i <= to; i++) {
+        graphNodes.nodes.push({
+          id: stops[i]["id"],
+          value: stops[i]["id"],
+          symbolSize: 4,
+          x: stops[i]["X"],
+          y: -stops[i]["Y"],
+          name: stops[i]["Station"],
+          category: stops[i]["MetroLine"]
+        });
+        graphNodes.links.push({
+          //finding nodes using 'id' property
+          source: `${i}`,
+          target: i + 1 <= to ? `${i + 1}` : `${i}`//to keep in range
+        });
+        set.add(stops[i]["MetroLine"]);
+      }
+    };
+    ```
+
+
 -  I have separated all the lines in different functions for better readability.
