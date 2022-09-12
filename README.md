@@ -45,4 +45,4 @@ Map was created using Apache Echart.
     };
 ```
 
--  I have separated all the lines in different functions for better readability.
+-  I have separated all the metro lines in different functions for better readability.
