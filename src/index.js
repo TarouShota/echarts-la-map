@@ -9,7 +9,8 @@ var myChart = echarts.init(dom, null, {
   useDirtyRect: false
 });
 
-fetch("./src/railStops.json").then(async (response) => {
+const url = "https://api.npoint.io/97d3db70a38b39f037e5";
+fetch(url).then(async (response) => {
   const stops = await response.json();
   //console.log(stops);
   let graphNodes = {
