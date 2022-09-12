@@ -3,7 +3,8 @@ Map was created using Apache Echart.
 
 I got the station's data from geohub lacity.
 Sample data:
-{
+
+```js{
     "X": "-118.19292099988",
     "Y": "33.768070999739",
     "id": 1,
@@ -13,6 +14,7 @@ Sample data:
     "TOOLTIP": "Stop: Downtown Long Beach Station\\nStop No: 80101\\nBlue Line",
     "NLA_URL": "http://www.metro.net/riding/maps/blue-line/?nla_target=1&nla_win=p,75,75"
   }
+  ```
 
 Data from geohub lacity was from .csv format, so I had to convert it to Json format first.
 Also, I have set up a lightweight JSON endpoint on npoint.io to fetch station's json from there
