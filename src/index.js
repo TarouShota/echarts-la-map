@@ -33,8 +33,9 @@ fetch(url).then(async (response) => {
           category: stops[i]["MetroLine"]
         });
         graphNodes.links.push({
+          //finding nodes using 'id' property
           source: `${i}`,
-          target: i + 1 <= to ? `${i + 1}` : `${i}`
+          target: i + 1 <= to ? `${i + 1}` : `${i}`//to keep in range
         });
         set.add(stops[i]["MetroLine"]);
       }
@@ -82,6 +83,7 @@ fetch(url).then(async (response) => {
     pushPurleLine();
 
     console.log(graphNodes);
+    //pushed every metroLine in categories[]
     for (let val of set) {
       graphNodes.categories.push({
         name: val
@@ -99,10 +101,7 @@ fetch(url).then(async (response) => {
       color: ["#3868C9", "#61E435", "#DFAC12", "#ee6666", "#6AEAEC", "#AA2CEE"],
       backgroundColor: "black",
       tooltip: {},
-      // yAxis:[{
-      //   inverse:true,
-      // }],
-      // xAxis:true,
+ 
       legend: [
         {
           data: graph.categories.map(function (a) {
@@ -117,12 +116,7 @@ fetch(url).then(async (response) => {
           circular: {
             rotateLabel: true
           },
-          // coordinateSystem:'cartesian2d',
-          // xAxisIndex:0,
-          // yAxisIndex:1,
-          //geoIndex:
-          // polyline: true,
-          // title:"linear",
+         
           name: "Station",
           // type: "graph",
           // layout: "none",
