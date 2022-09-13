@@ -2,8 +2,7 @@
 # echarts-la-map
 Map was created using Apache Echart.
 
-### data from geohub lacity.
-### Sample data:
+### Sample data from geohub lacity:
 
 ```js{
     "X": "-118.19292099988",
