@@ -2,7 +2,7 @@
 # echarts-la-map
 Map was created using Apache Echart.
 
-### I got the station's data from geohub lacity.
+### data from geohub lacity.
 ### Sample data:
 
 ```js{
@@ -17,8 +17,7 @@ Map was created using Apache Echart.
   }
   ```
 
--  Data from geohub lacity was from .csv format, so I had to convert it to JSON format first.
-
+- Data from geohub lacity was in .csv format, so I had to convert it to JSON format first.
 - Also, I have set up a lightweight JSON endpoint on npoint.io to fetch station's json from there
 
 -  All that is left is write an algorithm, which is going to go through a specific range of stations and connect them.  
