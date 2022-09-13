@@ -1,6 +1,5 @@
 import * as echarts from "echarts";
 import $, { map } from "jquery";
-import ROOT_PATH from "./data.js";
 import "echarts/extension/bmap/bmap";
 // import data from '../insertData.js'
 var dom = document.getElementById("chart-container");
