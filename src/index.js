@@ -1,7 +1,6 @@
 import * as echarts from "echarts";
 import $, { map } from "jquery";
 import "echarts/extension/bmap/bmap";
-// import data from '../insertData.js'
 var dom = document.getElementById("chart-container");
 var myChart = echarts.init(dom, null, {
   renderer: "canvas",
